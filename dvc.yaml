@@ -19,7 +19,7 @@ stages:
     - data/processed/train.csv
     - src/train_model.py
     outs:
-    - models/iris_logistic_regression.pkl
+    - models/logistic_regression_model.pkl
     metrics:
     - metrics/metrics.json:
         cache: false

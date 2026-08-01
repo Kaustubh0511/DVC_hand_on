@@ -50,9 +50,9 @@ def main():
         json.dump(metrics, f, indent=4)
 
     print(f"[OK] Model trained and saved to {model_path}. Metrics saved to {metrics_path}.")
-    print(f"[OK] Accuracy Score: {accuracy.round(4)}")
+    print(f"[OK] Accuracy Score: {accuracy:.4f}")
     print(f"[OK] Git Commit Hash: {get_git_commit_hash()}")
-
+    return 0
 
 
 if __name__ == "__main__":
